@@ -3,6 +3,13 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Labels</title>
+    
+    {{-- Custom CSS --}}
+    @if (($snipeSettings) && ($snipeSettings->custom_css))
+    <style>
+        {!! $snipeSettings->show_custom_css() !!}
+    </style>
+    @endif
 
 </head>
 <body>
